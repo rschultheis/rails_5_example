@@ -1,4 +1,4 @@
-<h1>Example#test</h1>
+<h1>Example#test dynamic HTML</h1>
 <p>Find me in app/views/example/test.html.erb</p>
 
 <h2>Time</h2>
@@ -9,3 +9,5 @@
 <% 10.times do |i| %>
   <%= "# #{i}" %>
 <% end %>
+
+<%= render partial: "footer", locals: { start_yearx: "2000" } %>
