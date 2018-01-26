@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+basic:
+  name: Tanzania
+  population: 123456789
+
+other:
+  name: Romania
+  population: 987654321
