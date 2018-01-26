@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/rschultheis/personal_code/machinist
+  specs:
+    machinist (2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -86,7 +91,7 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.1)
+    minitest (5.10.3)
     multi_json (1.13.1)
     nio4r (2.2.0)
     nokogiri (1.8.1)
@@ -188,6 +193,8 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  machinist!
+  minitest (= 5.10.3)
   pry-rails
   puma (~> 3.7)
   rails (~> 5.1.4)
