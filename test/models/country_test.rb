@@ -2,12 +2,12 @@ require 'test_helper'
 
 class CountryTest < ActiveSupport::TestCase
   test "Should know its name" do
-    country = countries(:basic)
+    country = Country.make name: "Tanzania"
     assert_equal "Tanzania", country.name
   end
 
   test "Should know its population" do
-    country = countries(:basic)
-    assert_equal 123456789, country.population
+    country = Country.make population: 112211
+    assert_equal 112211, country.population
   end
 end
