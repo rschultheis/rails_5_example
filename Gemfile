@@ -42,7 +42,8 @@ group :development, :test do
 end
 
 group :test do
-  gem "machinist", path: "/Users/rschultheis/personal_code/machinist"
+  gem "factory_bot_rails"
+  gem "machinist"
   gem "minitest", "5.10.3"
 end
 
