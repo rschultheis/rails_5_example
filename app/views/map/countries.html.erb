@@ -1,0 +1,17 @@
+<h1>Countries</h1>
+
+<% Country.all.each do |country| %>
+  <h2><%= country.name %></h2>
+  <h3>Citizens</h3>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  <% country.citizens.each do |citizen| %>
+    <tr>
+      <td><%= citizen.name %></td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>
