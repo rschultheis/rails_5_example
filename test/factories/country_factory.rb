@@ -1,13 +1,6 @@
-
 FactoryBot.define do
-
   factory :country do
-    name "TestName"
-    population { 123456789 }
-
-    after(:create) do |country, evaluator|
-      country.name = "Tanzania"
-    end
+    name { Faker::GameOfThrones.house }
+    population { rand(1_000_000_000) }
   end
-
 end
