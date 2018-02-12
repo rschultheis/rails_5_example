@@ -12,4 +12,10 @@ class CountryTest < ActiveSupport::TestCase
     assert_equal 112211, country.population
   end
 
+  test "should have citizens" do
+    country = create :country_with_citizens
+    assert_instance_of Citizen, country.citizens.sample
+    assert_equal country,
+                 country.citizens.sample.country
+  end
 end
